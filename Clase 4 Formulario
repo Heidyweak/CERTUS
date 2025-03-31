@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro de Producto</title>
+    <style>
+body{
+    font-family: Arial,sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+.form-container{
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+h2{
+    text-align: center;
+    color: #333;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+.form-group label{
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+.form-group input, .form-group select, .form-group textarea{
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.form-group button{
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.form-group button:hover{
+    background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Registro de Producto</h2>
+    </div>
+    <form action="#" method="post">
+    <!--NOMBRE DEL PRODUCTO-->
+<div class="form group">
+    <label for="Producto">Nombre del Producto</label>
+    <input type="text" id="producto" name="producto" required>
+</div>
+<!--CATEGORIA DEL PRODUCTO (COMBOBOX)-->
+<div class="form group">
+    <label for="categoria">Categoria del producto</label>
+    <select id="categoria" name="categoria" required>
+        <option value="seleccione">seleccione</option>
+        <option value="electronica">electronica</option>
+        <option value="ropa">ropa</option>
+        <option value="alimentos">alimentos</option>
+        <option value="hogar">hogar</option>
+    </select>
+</div>
+
+<!--DESCRIPCION DEL PRODUCTO-->
+<div class="form group">
+    <label for="descripcion">Descripcion del producto</label>
+    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+</div>
+
+<!--PRECIO-->
+<div class="form group">
+    <label for="precio">Precio del producto: </label>
+    <input type="number" id="precio" name="precio" min="0" required>
+</div>
+
+<!--DISPONIBILIDAD-->
+<div class="form group">
+    <label for="disponibilidad">¿Esta disponible?</label><br>
+    <input type="radio" id="no disponible" name="disponibilidad" value="si" required>SI
+    <input type="radio" id="no disponible" name="disponibilidad" value="no" required>NO
+</div>
+
+<!--PRODUCTOS DESTACADOS-->
+<div class="form group">
+    <label for="destacado">¿Es un producto destacado?</label><br>
+    <label type="checkbox" id="destacado" name="destacado"></label>
+</div>
+
+<!--FECHA DE REGISTRO-->
+<div class="form group">
+    <label for="fecha-registro">Fecha de registro</label>
+    <label type="date" id="fecha-registro" name="fecha-registro" required></label>
+</div>
+
+<!--IMAGEN DEL PRODUCTO-->
+<div class="form group">
+    <label for="imagen">Subir imagen del producto: </label>
+    <input type="file" id="imagen" name="imagen" accept="imagen/*">
+</div>
+
+<!--BOTON DE ENVIO-->
+<div class="form group">
+    <button type="submit">Registrar producto</button>
+</div>
+
+   </form>
+</body>
+</html>
