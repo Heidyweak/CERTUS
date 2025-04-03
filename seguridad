@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguridad informatica</title>
+    <style>
+body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: rgb(27, 124, 209);
+            padding: 50px;
+        }
+        .container{
+            max-width: 600px;
+            margin: auto;
+            background: rgb(235, 232, 232);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1)
+        }
+        h1{
+            color: #0d41a1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Seguridad Informatica</h1>
+        <p>La seguridad informatica protege los sistemas y datos
+            contra ataques y amenazas
+        </p>
+        <a href="index.html">Volver al inicio</a>
+    </div>
+</body>
+</html>
