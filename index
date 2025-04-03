@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice de tecnologia</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: aliceblue;
+            padding: 50px;
+        }
+        .container{
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1)
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+        li{
+            margin: 10px 0;
+        }
+        a{
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+        }
+        a.hover{
+            text-decoration: underline;
+        }
+        </style>
+</head>
+<body>
+     <div class="container">
+        <h1>Tecnologias informaticas</h1>
+        <p>Seleccione una categoria</p>
+        <ul>
+            <li><a href="hardware.html">Hardware</a></li>
+            <li><a href="software.html">Software</a></li>
+            <li><a href="redes.html">Redes</a></li>
+            <li><a href="seguridad.html">Seguridad</a></li>
+    
+        </ul>
+    </div>
+</body>
+</html>
