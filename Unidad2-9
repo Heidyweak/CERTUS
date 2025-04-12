@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria CSS - AVANZADA</title>
+    <link rel="stylesheet" href="relieve.css">
+</head>
+<body>
+    <!--SE PROCEDE A CREAR CHECKBOX PARA CADA IMAGEN-->
+    <input type="checkbox" id="img1">
+    <input type="checkbox" id="img2">
+    <input type="checkbox" id="img3">
+
+    <section class="galeria">
+        <label class="imagen" for="img1">
+            <img src="http://picsum.photos/id/1015/300/200" alt="Montaña">
+        </label>
+        <label class="imagen" for="img2">
+            <img src="http://picsum.photos/id/1020/300/200" alt="Bosque">
+        </label>
+        <label class="imagen" for="img3">
+            <img src="http://picsum.photos/id/1012/300/200" alt="Playa">
+        </label>
+    </section>
+
+    <!--SE PROCEDE A CREAR LOS MODALES-->
+    <!--MODAL 1-->
+    <div class="modal" id="modal1">
+        <div class="modal-content">
+            <label class="cerrar" for="img1">&times;</label>
+            <img src="https://picsum.photos/id/1015/600/400" alt="Montaña grande">
+            <h2>Montaña</h2>
+            <p>Una vista hermosa de una montaña al amanecer</p>
+        </div>
+    </div>
+
+    <!--MODAL 2-->
+    <div class="modal" id="modal2">
+        <div class="modal-content">
+            <label class="cerrar" for="img2">&times;</label>
+            <img src="https://picsum.photos/id/1020/600/400" alt="Bosque grande">
+            <h2>Bosque</h2>
+            <p>Un bosque denso y misterioso en la neblina</p>
+        </div>
+    </div>
+
+    <!--MODAL 3-->
+    <div class="modal" id="modal3">
+        <div class="modal-content">
+            <label class="cerrar" for="img3">&times;</label>
+            <img src="https://picsum.photos/id/1012/600/400" alt="Playa grande">
+            <h2>Playa</h2>
+            <p>Relajante vista de la playa en verano</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
